@@ -29,7 +29,7 @@ You will need a Pushover account, user token, and app token.
 ### Installation
 To use bootlace you'll need Python installed as well as the contents of `requirements.yaml`. Use the following commands to download Bootlace and install the required dependancies:
 ```
-git clone https://github.com/IronicBadger/bootlace.git
+git clone https://github.com/MichelfrancisBustillos/bootlace.git
 cd bootlace
 pip install -r requirements.txt
 ```
