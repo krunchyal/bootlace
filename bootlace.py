@@ -32,13 +32,13 @@ keys = ['token', 'user', 'device', 'message', 'title', 'html', 'priority', 'time
 
 args = docopt.docopt(__doc__)
 
-if args['--html']:  #If HTML flag set, set value to '1' to enable HTML parsing of MESSAGE
+if args['--html']:  # If HTML flag set, set value to '1' to enable HTML parsing of MESSAGE
     args['--html'] = 1
 
-if args['--timestamp']: #If TIMESTAMP flag set, set value to current Unix time of host
+if args['--timestamp']:  # If TIMESTAMP flag set, set value to current Unix time of host
     args['--timestamp'] = int(time.time())
 
-if not args['--device']:  #If no device name provided, use Hostname
+if not args['--device']:  # If no device name provided, use Hostname
     args['--device'] = socket.gethostname()
 
 constructed_message = {key: args['--'+key] for key in keys}
